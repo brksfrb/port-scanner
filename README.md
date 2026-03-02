@@ -78,7 +78,7 @@ in **under a minute**.
 |-------------|--------------|------------------|
 | 200          | ~250 IPs/s   | ~4 min           |
 | 1000         | ~1,200 IPs/s | ~55 sec          |
-| **4000**     | **~5,000 IPs/s** | **< 30 sec**     |
+| **4000**     | **~5,000 IPs/s** | **< 20 sec**     |
 
 > **Note:** 4000 threads is aggressive and works well on modern hardware.
 > If you see errors or instability, your OS may be hitting its open-file or
