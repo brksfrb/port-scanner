@@ -69,18 +69,18 @@ stays open until you close it.
 
 ## Performance
 
-For maximum efficiency, set `NUM_SCANNERS = 4000`. At this thread count the
-scanner achieves approximately **~5,000 IPs/second**, meaning a full
+For maximum efficiency, set `NUM_SCANNERS = 6000`. At this thread count the
+scanner achieves approximately **~6,500 IPs/second**, meaning a full
 `192.168.0.0 – 192.168.255.255` sweep (65,535 IPs, single port) completes
-in **under a minute**.
+in **about 10 seconds**.
 
 | Thread count | Speed        | Full subnet scan |
 |-------------|--------------|------------------|
 | 200          | ~250 IPs/s   | ~4 min           |
 | 1000         | ~1,200 IPs/s | ~55 sec          |
-| **4000**     | **~5,000 IPs/s** | **< 20 sec**     |
+| **6000**     | **~6,500 IPs/s** | **~10 sec**      |
 
-> **Note:** 4000 threads is aggressive and works well on modern hardware.
+> **Note:** 6000 threads is aggressive and works well on modern hardware.
 > If you see errors or instability, your OS may be hitting its open-file or
 > thread limit — try `ulimit -n 8192` on Linux/macOS, or reduce the count.
 
