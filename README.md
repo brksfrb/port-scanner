@@ -5,7 +5,7 @@ A fast, multi-threaded LAN port scanner with a live Tkinter progress window.
 Scans a range of `192.168.x.x` addresses across configurable ports and reports
 open ports in real time — both in the terminal and in a GUI log window.
 
-**A full 192.168.0.0 – 192.168.255.255 sweep (65,535 IPs, single port) completes in in ~10 seconds.**
+**A full 192.168.0.0 – 192.168.255.255 sweep (65,535 IPs, single port) completes in ~10 seconds.**
 
 ---
 
@@ -74,7 +74,7 @@ stays open until you close it.
 For maximum efficiency, set `NUM_SCANNERS = 6000`. At this thread count the
 scanner achieves approximately **~6,000 IPs/second**, meaning a full
 `192.168.0.0 – 192.168.255.255` sweep (65,535 IPs, single port) completes
-in **in ~10 seconds**.
+in **~10 seconds**.
 
 | Thread count | Speed        | Full subnet scan |
 |--------------|--------------|------------------|
